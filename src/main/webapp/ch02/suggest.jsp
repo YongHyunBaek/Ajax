@@ -11,14 +11,15 @@
 				"자바 서버 페이지",
 				"자바 스터디",
 				"자바 서비스",
-				"자바 캔"
+				"자바 캔",
+				"자바 캔캔"
 		};
 
 		public List search(String keyword){
 				if( keyword == null || keyword.equals(""))
 						return java.util.Collections.EMPTY_LIST;
 				keyword = keyword.toUpperCase();
-				List result = new java.util.ArrayList(8);
+				List result = new java.util.ArrayList(9);
 				for( int i = 0; i < keywords.length; i++){
 						if(((String)keywords[i]).startsWith(keyword)){
 									result.add(keywords[i]);
@@ -39,5 +40,5 @@
 				if(i < keywordList.size() -1){
 						out.print(","); //제시어 목록을 CSV양식으로 출력해줌 
 				}
-		}
+		} 
 %>
